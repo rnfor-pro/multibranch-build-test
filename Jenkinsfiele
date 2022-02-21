@@ -4,6 +4,6 @@ pipeline{
   stages{
     stage('git-clone'){
       steps{
-         checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'git-id', url: 'https://github.com/etechDevops/module2_ci']]])
+         checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: '5de3e158-cb03-4467-8eff-0b8ec559a1bf', url: 'https://github.com/rnfor-pro/multibranch-build-test']]])
       }
     }
